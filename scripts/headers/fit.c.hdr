@@ -1,0 +1,5 @@
+/*
+ * fit.c - 季节 ARIMA 拟合 (emle)
+ *
+ * 功能: AS154/AS182 似然、CSS、STARMA/Kalman、MLE 目标函数与拟合例程。
+ */

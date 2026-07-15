@@ -1,0 +1,6 @@
+/*
+ * sarimatest.c - SARIMA 示例程序
+ *
+ * 功能: 读取 seriesG.txt, 对数变换, 拟合季节 ARIMA, 打印摘要与预测。
+ * 须用 CMake 目标 sarimatest 链接 sarimalib 构建。
+ */

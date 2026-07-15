@@ -1,0 +1,5 @@
+/*
+ * cstats.c - SARIMA 统计与求根
+ *
+ * 功能: 样本均值、Jenkins-Traub 多项式求根 (polyroot / cpoly)。
+ */

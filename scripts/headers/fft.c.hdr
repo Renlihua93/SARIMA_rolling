@@ -1,0 +1,5 @@
+/*
+ * fft.c - 快速傅里叶变换 (hsfft + real)
+ *
+ * 功能: 混合基复数 FFT、Bluestein 补长、旋转因子; 实序列 r2c/c2r 变换。
+ */

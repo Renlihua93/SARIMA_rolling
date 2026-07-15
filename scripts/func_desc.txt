@@ -1,0 +1,120 @@
+# name|description (UTF-8)
+main|程序入口: 加载数据、拟合 SARIMA、输出预测
+sarima_init|分配并初始化 SARIMA 模型对象
+sarima_setMethod|设置估计方法: 0 为 MLE, 1 为 CSS
+sarima_setCSSML|设置 MLE 是否从 CSS 初值启动
+sarima_setOptMethod|设置优化器编号 0..7
+sarima_exec|对输入序列执行季节 ARIMA 拟合
+sarima_predict|L 步超前预测并给出均方误差
+sarima_vcov|复制参数协方差矩阵
+sarima_summary|打印系数、标准误、对数似然与 AIC
+sarima_free|释放 SARIMA 模型对象
+opt_method_name|优化方法编号转名称字符串
+exit_message|优化返回码转说明字符串
+expand_sarima_operators|季节 AR/MA 展开为非季节算子
+fft_init|创建混合基 FFT 对象
+fft_exec|执行复数 FFT 正/逆变换
+fft_real_init|创建实序列 FFT 对象
+fft_r2c_exec|实序列到频域 (r2c)
+fft_c2r_exec|频域到实序列 (c2r)
+free_fft|释放 FFT 对象
+free_real_fft|释放实 FFT 对象
+mixed_radix_dit_rec|混合基 DIT FFT 递归
+bluestein_exp|Bluestein 指数核
+bluestein_fft|Bluestein 任意长度 FFT
+divideby|判断 M 能否被 d 整除
+dividebyN|选择直接 FFT 或 Bluestein
+factors|变换长度的素因子分解
+twiddle|按 radix 生成旋转因子
+longvectorN|长向量 twiddle 表预计算
+as154_seas|季节 ARIMA AS154 精确 MLE
+css_seas|季节 ARIMA 条件平方和 CSS
+forkal|Kalman 型多步预测与 AMSE
+checkroots|检查 AR/MA 平稳性与可逆性
+checkroots_cerr|checkroots 的 C 错误码封装
+macheps|返回双精度机器 epsilon
+conv|一维实序列卷积
+diff|对序列施加普通差分 (d 阶)
+diffs|对序列施加季节差分 (D 阶, 周期 s)
+archeck|检验 AR 特征多项式根是否在单位圆内 (平稳性)
+invertroot|检验 MA 特征多项式根是否在单位圆外 (可逆性)
+deld|构造普通差分算子系数
+delds|构造季节差分算子系数
+opt_method_name|将优化器编号映射为可读名称
+exit_message|将优化返回码映射为可读说明
+as154|非季节 ARIMA 的 AS154 精确 MLE 拟合
+as154x|带外生回归的季节 ARIMA AS154 MLE
+css|非季节 ARIMA 的 CSS 拟合
+cssx|带外生回归的季节 ARIMA CSS 拟合
+as197|AS197 算法 ARIMA 拟合
+inclu2|Givens 旋转更新 Rbar (回归辅助)
+regres|从 Rbar 回代求解回归系数
+karma|Kalman 滤波递推一步
+starma|STARMA 初始条件与方差设置
+flikam|计算精确似然中的创新项
+fas154|AS154 MLE 目标函数 (非季节)
+fcss|CSS 目标函数 (非季节)
+fas154_seas|AS154 MLE 目标函数 (季节)
+fcss_seas|CSS 目标函数 (季节)
+fas154x_seas|带外生变量的季节 AS154 目标函数
+fcssx|带外生变量的 CSS 目标函数
+grad_calc|数值梯度 (中心差分)
+grad_calc2|数值梯度 (备用差分格式)
+stopcheck|优化停止判断 (梯度/步长/函数值)
+stopcheck2|优化停止判断 (简化版)
+stopcheck2_mt|多线程版 stopcheck2
+stopcheck3_mt|多线程版 stopcheck3
+stopcheck_mt|多线程版 stopcheck
+lnsrch|线搜索求可接受步长
+bfgs_min2|BFGS 无约束极小化
+neldermead|Nelder-Mead 单纯形法
+conjgrad_min|非线性共轭梯度法
+newton_min|牛顿法极小化
+supsmu|Friedman 超平滑器
+poly_mult|多项式系数相乘 (差分算子用)
+conv_direct|直接法一维卷积
+grad_fd|梯度: 有限差分或用户提供的梯度回调
+linsolve_lower|下三角 (Cholesky 因子) 线性方程求解
+hessian_fd|Hessian 有限差分近似
+jrotate|Givens 旋转 (QR 秩1更新辅助)
+qrupdate|QR 因子秩1更新
+inithess_lower|BFGS 初始逆 Hessian (下三角因子)
+bfgs_factored|BFGS 逆 Hessian 因子更新
+bfgs_min|BFGS 无约束极小化主循环
+fminunc|无约束优化统一入口 (SARIMA 使用 BFGS)
+imax|两整数取较大值
+imin|两整数取较小值
+signx|实数符号 (-1 / +1)
+l2norm|向量 L2 范数
+array_max_abs|向量元素绝对值的最大值
+scale|矩阵标量乘法
+madd|矩阵相加
+msub|矩阵相减
+nmult|朴素矩阵乘法
+mmult|矩阵乘法 (调用 nmult)
+stranspose|矩阵转置 (标准实现)
+mtranspose|矩阵转置 (SARIMA 路径)
+pludecomp|带部分主元的 LU 分解
+ludecomp|LU 分解入口
+linsolve|LU 回代求解 Ax=b
+minverse|矩阵求逆 (基于 LU)
+mean|样本均值
+mcon|多项式求根: 机器常数初始化
+CMOD|复数模长
+CDIVID|复数除法
+RESCALE|多项式求根: 系数缩放
+CAUCHY|多项式求根: Cauchy 界
+ERREV|多项式求根: 误差界
+POLYEV|多项式求根: 多项式求值
+NEXTH|多项式求根: 迭代步 NEXTH
+CALCT|多项式求根: 计算 T
+VRSHFT|多项式求根: 变步长位移
+FXSHFT|多项式求根: 固定步长位移
+NOSHFT|多项式求根: 无位移阶段
+cpoly|Jenkins-Traub 复多项式求根核心
+polyroot|实系数多项式求根
+alik_css_seas_init|初始化季节 CSS 似然工作区
+alik_seas_init|初始化季节 MLE 似然工作区
+free_alik_seas|释放季节 MLE 工作区
+free_alik_css_seas|释放季节 CSS 工作区
+regres|从 Rbar 回代回归系数 (STARMA 用)

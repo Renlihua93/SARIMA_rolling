@@ -1,0 +1,70 @@
+# regex<TAB>description prefix (UTF-8)
+_init$	初始化
+init$	初始化
+^free_	释放内存
+_free$	释放内存
+^set	设置参数
+exec$	执行计算
+transpose	矩阵转置
+^madd	矩阵相加
+^msub	矩阵相减
+mult	矩阵乘法
+chol	Cholesky 分解
+svd	奇异值分解
+lls	线性最小二乘
+regress	回归分析
+anova	方差分析
+bfgs	优化算法
+hess	优化算法
+jac	优化算法
+grad	优化算法
+stopcheck	优化算法
+lnsrch	优化算法
+fmin	优化算法
+nelder	优化算法
+newton	优化算法
+conjgrad	优化算法
+brent	优化算法
+secant	优化算法
+trsrch	优化算法
+trstep	优化算法
+norm	概率分布
+gamma	概率分布
+beta	概率分布
+erf	概率分布
+pdf	概率分布
+cdf	概率分布
+inv	概率分布
+as154	ARIMA 似然/拟合
+css	ARIMA 似然/拟合
+seas	ARIMA 似然/拟合
+lik	ARIMA 似然/拟合
+kalman	ARIMA 似然/拟合
+forkal	ARIMA 似然/拟合
+starma	ARIMA 似然/拟合
+karma	ARIMA 似然/拟合
+flikam	ARIMA 似然/拟合
+fas154	ARIMA 似然/拟合
+fcss	ARIMA 似然/拟合
+filter	时序运算
+conv	时序运算
+diff	时序运算
+auto	时序运算
+poly	时序运算
+root	时序运算
+deld	时序运算
+arma	时序运算
+fft	FFT
+eig	矩阵数值
+qr	矩阵数值
+lu	矩阵数值
+rank	矩阵数值
+inverse	矩阵数值
+solve	矩阵数值
+display	矩阵数值
+scale	矩阵数值
+eye	矩阵数值
+house	矩阵数值
+mean	统计/显示
+var	统计/显示
+enorm	统计/显示

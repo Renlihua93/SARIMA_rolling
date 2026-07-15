@@ -1,0 +1,5 @@
+/*
+ * optim.c - SARIMA 数值优化
+ *
+ * 功能: 有限差分梯度、BFGS 无约束极小化、fminunc 入口、Hessian 数值近似。
+ */
